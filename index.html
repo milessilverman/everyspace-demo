@@ -10,9 +10,9 @@
   <meta property="og:site_name" content="Everyspace">
   <meta property="og:title" content="Everyspace — Manage everything you rent out">
   <meta property="og:description" content="Free 2-minute quiz: see what your roof, wall, driveway, backyard or spare room could earn. List once, live everywhere.">
-  <meta property="og:url" content="https://milessilverman.github.io/everyspace/">
+  <meta property="og:url" content="https://milessilverman.github.io/everyspace-demo/">
   <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://milessilverman.github.io/everyspace/">
+  <link rel="canonical" href="https://milessilverman.github.io/everyspace-demo/">
   <meta name="theme-color" content="#0f766e">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -15308,7 +15308,7 @@ async function renderHostListings(view) {
         </div>
       </div>
       <a class="promise-strip" href="#/promise">${icon.briefcase} <span><strong>List anywhere, manage here.</strong> No exclusivity, no ranking penalties, and managing is free. <u>Our host promise</u></span></a>
-      <a class="promise-strip console-strip" href="host/">${icon.shieldCheck} <span><strong>Ready to run it for real?</strong> The Host Console connects your actual Airbnb, Vrbo and other calendars, and checks every request so nothing gets double-booked. <u>Open the Host Console</u></span></a>
+      <a class="promise-strip console-strip" href="https://milessilverman.github.io/everyspace/host/">${icon.shieldCheck} <span><strong>Ready to run it for real?</strong> The Host Console connects your actual Airbnb, Vrbo and other calendars, and checks every request so nothing gets double-booked. <u>Open the Host Console</u></span></a>
       ${props.length ? props.map((p) => `<section class="property">
         <div class="row-between">
           <div><h2>${esc(p.title)}</h2><div class="muted small card-meta">${ownerChip(p.ownerType)} ${esc(p.city)} · ${esc(([...state.catalog.propertyTypes.home, ...state.catalog.propertyTypes.business].find(([v]) => v === p.type) ?? [0, p.type.replace('_', ' ')])[1])}${p.hoa ? ' · HOA' : ''}</div></div>
@@ -17168,7 +17168,7 @@ async function renderProfile(view) {
         ${isBiz ? '' : '<a href="#/biz">' + icon.building + ' <span>Everyspace for Business</span>' + icon.chevron + '</a>'}
         <a href="#/plan">${icon.fileText} <span>Product Architecture & Mission Plan</span>${icon.chevron}</a>
         <a href="#/promise">${icon.briefcase} <span>Our host promise (list anywhere, manage here)</span>${icon.chevron}</a>
-          <a href="host/">${icon.shieldCheck} <span>Host Console: run your real listings, with no double bookings (beta)</span>${icon.chevron}</a>
+          <a href="https://milessilverman.github.io/everyspace/host/">${icon.shieldCheck} <span>Host Console: run your real listings, with no double bookings (beta)</span>${icon.chevron}</a>
         <a href="#/catalog">${icon.explore} <span>Everything you can rent out, and what each one needs</span>${icon.chevron}</a>
         <button id="install" hidden>${icon.spark} <span>Install Web App</span>${icon.chevron}</button>
         <button id="reset">${icon.refresh} <span>Reset demo data to initial state</span>${icon.chevron}</button>
